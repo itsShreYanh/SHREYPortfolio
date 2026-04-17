@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>entry form</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url("https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg");
+            background-size: cover;
+        }
+
+        .form1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("https://www.pngkey.com/png/full/367-3670570_login-bg.png");
+            background-position: center 270px;
+            background-repeat: no-repeat;
+        }
+
+        .form{
+            height: auto;
+            width: 25%;
+            min-width: 280px;
+            border: 2px solid rgb(114, 108, 108);
+            border-radius: 8px;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        .form img{
+            height: 100px;
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        input{
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 12px 0;
+            background-color: transparent;
+            border: 2px solid rgba(165, 100, 182, 0.527);
+            border-radius: 50px;
+            outline: none;
+        }
+
+        input:focus{
+            border-color: purple;
+        }
+
+        .btn-group{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .btn-group input{
+            width: 100%;
+            cursor: pointer;
+            background-color: rgba(165, 100, 182, 0.2);
+        }
+
+        p{
+            margin: 8px 0 2px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form1">
+        <div class="form">
+
+            <img src="https://png.pngtree.com/png-clipart/20250105/original/pngtree-user-profile-login-icon-in-silver-color-access-authentication-vector-png-image_19841391.png" alt="user">
+
+            <p>Name</p>
+            <input type="text" placeholder="Your Name">
+
+            <p>Today Date</p>
+            <input type="date">
+
+            <p>Contact</p>
+            <input type="tel" placeholder="Contact Number">
+
+            <p>Email</p>
+            <input type="email" placeholder="Email@xyz.com">
+
+            <div class="btn-group">
+                <input type="button" value="Re-Set">
+                <input type="button" value="Submit">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
